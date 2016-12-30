@@ -1,0 +1,20 @@
+.scroll-view-item {
+    width: auto;
+    height: 13rem;
+}
+
+.bc_green{
+    background-color: green;
+}
+
+.bc_red{
+    background-color: red;
+}
+
+.bc_yellow{
+    background-color: yellow;
+}
+
+.bc_blue{
+    background-color: blue;
+}

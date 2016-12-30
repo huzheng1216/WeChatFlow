@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="show">
+    <text class="show_title">各种控件展示：</text>
+    <button bindtap="scroll_tap" class="show_button">滑动控件</button>
+        <button bindtap="request_tap" class="show_button">请求数据</button>
+  </view>
+  <scroll-view scroll-y="true" style="height: 200px;"  bindscrolltolower="lower">
+    <view wx:for="{{response}}" class="response">
+      <image class="response_img" src="{{item.images[0].url}}     "></image>
+      <view>
+        <text class="response_content">{{item.title}}</text>
+        <text class="response_desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
